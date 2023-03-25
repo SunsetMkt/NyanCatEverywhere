@@ -19,7 +19,7 @@
      * like 'https://nyan.takwolf.com#https://blog.takwolf.com'
      */
 
-    var include = document.createElement('iframe');
+    let include = document.createElement('iframe');
     include.style.position = 'fixed';
     include.style.left = '0';
     include.style.top = '0';
@@ -39,7 +39,7 @@
         if (window.location.hash === '') {
             include.src = document.referrer;
         } else {
-            include.src = window.location.hash.substr(1);
+            include.src = window.location.hash.substring(1);
         }
     }
     loadUrl();

@@ -16,8 +16,8 @@
 (function() {
     // return a int random num
     function getRandomNum(min, max) {
-        var range = max - min;
-        var rand = Math.random();
+        let range = max - min;
+        let rand = Math.random();
         return(min + Math.round(rand * range));
     }
 
@@ -58,23 +58,23 @@
     }
 
     // cat array used to manage
-    var cats = [];
+    let cats = [];
 
     // load callback
     function load() {
         // init cats
-        for (var n = 0; n < 20; n++) {
+        for (let n = 0; n < 20; n++) {
             cats[n] = new Cat();
         }
         // play bgm
-        var bgm = document.createElement('audio');
+        let bgm = document.createElement('audio');
         bgm.autoplay = true;
         bgm.loop = true;
-        var src1 = document.createElement('source');
+        let src1 = document.createElement('source');
         src1.src = 'bgm/nyancat.mp3';
         src1.type = 'audio/mpeg';
         bgm.appendChild(src1);
-        var src2 = document.createElement('source');
+        let src2 = document.createElement('source');
         src2.src = 'bgm/nyancat.ogg';
         src2.type = 'audio/ogg';
         bgm.appendChild(src2);
@@ -91,11 +91,11 @@
     // start loop engine
     function start() {
         // make a fps loop frame
-        var fps = 60;
-        var lastTime = new Date().getTime();
-        var loop = function() {
-            var nowTime = new Date().getTime();
-            var deltaTime = nowTime - lastTime;
+        let fps = 60;
+        let lastTime = new Date().getTime();
+        let loop = function() {
+            let nowTime = new Date().getTime();
+            let deltaTime = nowTime - lastTime;
             if (deltaTime - 1000 / fps >= 0) {
                 lastTime = nowTime;
                 update(deltaTime / 1000);

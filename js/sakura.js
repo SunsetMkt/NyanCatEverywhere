@@ -16,8 +16,8 @@
 (function() {
     // return a int random num
     function getRandomNum(min, max) {
-        var range = max - min;
-        var rand = Math.random();
+        let range = max - min;
+        let rand = Math.random();
         return(min + Math.round(rand * range));
     }
 
@@ -69,7 +69,7 @@
     }
 
     // sakura array used to manage
-    var sakuras = [];
+    let sakuras = [];
 
     // load callback
     function load() {
@@ -87,7 +87,7 @@
             sakura.update(dt);
         });
         // delete sakura
-        for (var n = 0; n < sakuras.length; n++) {
+        for (let n = 0; n < sakuras.length; n++) {
             if (sakuras[n].isOutOfWindow()) {
                 sakuras[n].delete();
                 sakuras.splice(n, 1);
@@ -101,11 +101,11 @@
     // start loop engine
     function start() {
         // make a fps loop frame
-        var fps = 60;
-        var lastTime = new Date().getTime();
-        var loop = function() {
-            var nowTime = new Date().getTime();
-            var deltaTime = nowTime - lastTime;
+        let fps = 60;
+        let lastTime = new Date().getTime();
+        let loop = function() {
+            let nowTime = new Date().getTime();
+            let deltaTime = nowTime - lastTime;
             if (deltaTime - 1000 / fps >= 0) {
                 lastTime = nowTime;
                 update(deltaTime / 1000);
