@@ -2,6 +2,8 @@
 
 # Nyan Cat Everywhere
 
+[<img src="https://api.gitsponsors.com/api/badge/img?id=29815361" height="20">](https://api.gitsponsors.com/api/badge/link?p=OfuEObIhQaqcQr1n7BUWjT6p548MSdqKObojns9F5iSYg/iW2CQDh5HxH9+6HgufvSYUS8pQ/L98Y5p/5Arp8UYA1F+QxVN/mPADKCnrH/GtRto82lbU4HTz3SgLuDiIkXAb6LvK29XeQTfnKHFX5w==)
+
 让彩虹猫入侵全世界！喵星人的目标是星辰大海！
 
 作战指挥总部：[https://nyan.takwolf.com](https://nyan.takwolf.com)
